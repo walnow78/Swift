@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterViewController" customModule="StarWarsSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="photoView" destination="7Zr-bE-fnO" id="8kf-Np-ER1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Zr-bE-fnO">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njS-Ym-UDQ">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <items>
+                        <barButtonItem title="Sound" id="pR2-52-bYs">
+                            <connections>
+                                <action selector="soundButton:" destination="-1" id="heV-O0-PIu"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="quj-YJ-lNO"/>
+                        <barButtonItem title="Wiki" id="Tsv-Db-kPB">
+                            <connections>
+                                <action selector="wikiButton:" destination="-1" id="jzC-Eu-hYZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7Zr-bE-fnO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Ig-zJ-Jkt"/>
+                <constraint firstItem="7Zr-bE-fnO" firstAttribute="leading" secondItem="njS-Ym-UDQ" secondAttribute="leading" id="CNi-y7-RgD"/>
+                <constraint firstItem="njS-Ym-UDQ" firstAttribute="bottom" secondItem="7Zr-bE-fnO" secondAttribute="bottom" id="D08-ve-a72"/>
+                <constraint firstAttribute="bottom" secondItem="7Zr-bE-fnO" secondAttribute="bottom" id="FDs-Vi-E58"/>
+                <constraint firstAttribute="trailing" secondItem="7Zr-bE-fnO" secondAttribute="trailing" id="WiT-IP-8Ar"/>
+                <constraint firstItem="7Zr-bE-fnO" firstAttribute="trailing" secondItem="njS-Ym-UDQ" secondAttribute="trailing" id="ekr-Je-zit"/>
+                <constraint firstItem="njS-Ym-UDQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jKw-R4-1be"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
