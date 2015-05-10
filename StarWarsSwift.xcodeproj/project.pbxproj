@@ -38,6 +38,8 @@
 		F57588881AFFE89400301863 /* UniverseTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57588861AFFE89400301863 /* UniverseTableViewHeader.swift */; };
 		F57588891AFFE89400301863 /* UniverseTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57588871AFFE89400301863 /* UniverseTableViewHeader.xib */; };
 		F575888B1B00041400301863 /* space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F575888A1B00041400301863 /* space.jpg */; };
+		F575888D1B0009F600301863 /* saber.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F575888C1B0009F600301863 /* saber.jpg */; };
+		F575888F1B000CFD00301863 /* galaxy.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F575888E1B000CFD00301863 /* galaxy.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		F57588861AFFE89400301863 /* UniverseTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniverseTableViewHeader.swift; sourceTree = "<group>"; };
 		F57588871AFFE89400301863 /* UniverseTableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UniverseTableViewHeader.xib; sourceTree = "<group>"; };
 		F575888A1B00041400301863 /* space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = space.jpg; sourceTree = "<group>"; };
+		F575888C1B0009F600301863 /* saber.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saber.jpg; sourceTree = "<group>"; };
+		F575888E1B000CFD00301863 /* galaxy.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = galaxy.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 		F575885B1AFE785100301863 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F575888E1B000CFD00301863 /* galaxy.JPG */,
+				F575888C1B0009F600301863 /* saber.jpg */,
 				F57588841AFFE78D00301863 /* background.jpeg */,
 				F575888A1B00041400301863 /* space.jpg */,
 				F57588711AFF9C3B00301863 /* c3po.caf */,
@@ -314,6 +320,7 @@
 				F57588891AFFE89400301863 /* UniverseTableViewHeader.xib in Resources */,
 				F575887A1AFF9C3B00301863 /* palpatine.caf in Resources */,
 				F575887C1AFF9C3B00301863 /* tarkin.caf in Resources */,
+				F575888D1B0009F600301863 /* saber.jpg in Resources */,
 				F575887D1AFF9C3B00301863 /* vader.caf in Resources */,
 				F57588831AFFB73000301863 /* UniverseTableViewCell.xib in Resources */,
 				F57588311AFE6C7200301863 /* Images.xcassets in Resources */,
@@ -321,6 +328,7 @@
 				F575886B1AFEAB4800301863 /* CharacterViewController.xib in Resources */,
 				F57588561AFE784A00301863 /* darthVader.jpg in Resources */,
 				F57588851AFFE78D00301863 /* background.jpeg in Resources */,
+				F575888F1B000CFD00301863 /* galaxy.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
