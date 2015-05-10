@@ -32,6 +32,12 @@
 		F575887C1AFF9C3B00301863 /* tarkin.caf in Resources */ = {isa = PBXBuildFile; fileRef = F57588751AFF9C3B00301863 /* tarkin.caf */; };
 		F575887D1AFF9C3B00301863 /* vader.caf in Resources */ = {isa = PBXBuildFile; fileRef = F57588761AFF9C3B00301863 /* vader.caf */; };
 		F575887E1AFF9C3B00301863 /* yoda.caf in Resources */ = {isa = PBXBuildFile; fileRef = F57588771AFF9C3B00301863 /* yoda.caf */; };
+		F57588821AFFB73000301863 /* UniverseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57588801AFFB73000301863 /* UniverseTableViewCell.swift */; };
+		F57588831AFFB73000301863 /* UniverseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57588811AFFB73000301863 /* UniverseTableViewCell.xib */; };
+		F57588851AFFE78D00301863 /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F57588841AFFE78D00301863 /* background.jpeg */; };
+		F57588881AFFE89400301863 /* UniverseTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57588861AFFE89400301863 /* UniverseTableViewHeader.swift */; };
+		F57588891AFFE89400301863 /* UniverseTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57588871AFFE89400301863 /* UniverseTableViewHeader.xib */; };
+		F575888B1B00041400301863 /* space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F575888A1B00041400301863 /* space.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +80,12 @@
 		F57588751AFF9C3B00301863 /* tarkin.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tarkin.caf; sourceTree = "<group>"; };
 		F57588761AFF9C3B00301863 /* vader.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vader.caf; sourceTree = "<group>"; };
 		F57588771AFF9C3B00301863 /* yoda.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yoda.caf; sourceTree = "<group>"; };
+		F57588801AFFB73000301863 /* UniverseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniverseTableViewCell.swift; sourceTree = "<group>"; };
+		F57588811AFFB73000301863 /* UniverseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UniverseTableViewCell.xib; sourceTree = "<group>"; };
+		F57588841AFFE78D00301863 /* background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpeg; sourceTree = "<group>"; };
+		F57588861AFFE89400301863 /* UniverseTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniverseTableViewHeader.swift; sourceTree = "<group>"; };
+		F57588871AFFE89400301863 /* UniverseTableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UniverseTableViewHeader.xib; sourceTree = "<group>"; };
+		F575888A1B00041400301863 /* space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = space.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,7 @@
 		F57588261AFE6C7200301863 /* StarWarsSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F575887F1AFFB71300301863 /* Views */,
 				F57588291AFE6C7200301863 /* AppDelegate.swift */,
 				F575886C1AFEABF900301863 /* Controllers */,
 				F57588651AFE7FB100301863 /* Models */,
@@ -154,6 +167,8 @@
 		F575885B1AFE785100301863 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F57588841AFFE78D00301863 /* background.jpeg */,
+				F575888A1B00041400301863 /* space.jpg */,
 				F57588711AFF9C3B00301863 /* c3po.caf */,
 				F57588721AFF9C3B00301863 /* chewbacca.caf */,
 				F57588731AFF9C3B00301863 /* palpatine.caf */,
@@ -191,6 +206,17 @@
 				F575886E1AFF68D200301863 /* WikiViewController.xib */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F575887F1AFFB71300301863 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F57588801AFFB73000301863 /* UniverseTableViewCell.swift */,
+				F57588811AFFB73000301863 /* UniverseTableViewCell.xib */,
+				F57588861AFFE89400301863 /* UniverseTableViewHeader.swift */,
+				F57588871AFFE89400301863 /* UniverseTableViewHeader.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,16 +307,20 @@
 				F57588591AFE784A00301863 /* tarkin.jpg in Resources */,
 				F57588551AFE784A00301863 /* chewbacca.jpg in Resources */,
 				F575885A1AFE784A00301863 /* yoda.jpg in Resources */,
+				F575888B1B00041400301863 /* space.jpg in Resources */,
 				F57588571AFE784A00301863 /* palpatine.jpg in Resources */,
 				F575887E1AFF9C3B00301863 /* yoda.caf in Resources */,
 				F57588541AFE784A00301863 /* c3po.jpg in Resources */,
+				F57588891AFFE89400301863 /* UniverseTableViewHeader.xib in Resources */,
 				F575887A1AFF9C3B00301863 /* palpatine.caf in Resources */,
 				F575887C1AFF9C3B00301863 /* tarkin.caf in Resources */,
 				F575887D1AFF9C3B00301863 /* vader.caf in Resources */,
+				F57588831AFFB73000301863 /* UniverseTableViewCell.xib in Resources */,
 				F57588311AFE6C7200301863 /* Images.xcassets in Resources */,
 				F57588781AFF9C3B00301863 /* c3po.caf in Resources */,
 				F575886B1AFEAB4800301863 /* CharacterViewController.xib in Resources */,
 				F57588561AFE784A00301863 /* darthVader.jpg in Resources */,
+				F57588851AFFE78D00301863 /* background.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,9 +339,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F575884C1AFE6E9D00301863 /* StarWarsCharacter.swift in Sources */,
+				F57588821AFFB73000301863 /* UniverseTableViewCell.swift in Sources */,
 				F575886A1AFEAB4800301863 /* CharacterViewController.swift in Sources */,
 				F57588641AFE7BB800301863 /* StarWarsUniverse.swift in Sources */,
 				F575882A1AFE6C7200301863 /* AppDelegate.swift in Sources */,
+				F57588881AFFE89400301863 /* UniverseTableViewHeader.swift in Sources */,
 				F575886F1AFF68D200301863 /* WikiViewController.swift in Sources */,
 				F57588671AFE7FD000301863 /* UniverseViewController.swift in Sources */,
 			);
@@ -503,6 +535,7 @@
 				F57588451AFE6C7200301863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F57588461AFE6C7200301863 /* Build configuration list for PBXNativeTarget "StarWarsSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +544,7 @@
 				F57588481AFE6C7200301863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

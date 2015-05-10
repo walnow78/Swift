@@ -37,6 +37,14 @@ class UniverseViewController: UITableViewController, UniverseViewControllerDeleg
         fatalError("NSCoding not supported")
     }
    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.registerNib(UINib(nibName: "UniverseTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
+        tableView.registerNib(UINib(nibName: "UniverseTableViewHeader", bundle: nil), forCellReuseIdentifier: "CustomHeader")
+
+    }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -73,26 +81,52 @@ class UniverseViewController: UITableViewController, UniverseViewControllerDeleg
         
     }
     
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        var header = tableView.dequeueReusableCellWithIdentifier("CustomHeader") as! UniverseTableViewHeader
+        
+        if section == 1{
+            header.textHeaderView.text = "Rebels"
+        }else{
+            header.textHeaderView.text = "Imperials"
+        }
+        
+        return header
+    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        let cellId = "cellId"
+//        let cellId = "cellId"
+//        
+//        var cell = tableView.dequeueReusableCellWithIdentifier(cellId) as? UITableViewCell
+//
+//        if cell == nil {
+//            cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: cellId)
+//        }
         
-        var cell = tableView.dequeueReusableCellWithIdentifier(cellId) as? UITableViewCell
-        
-        if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: cellId)
-        }
+        let cell = tableView.dequeueReusableCellWithIdentifier("CustomCell", forIndexPath: indexPath) as! UniverseTableViewCell
         
         var character = currentCharacter(indexPath)
-
-        cell!.textLabel!.text = character.name as String
-        cell!.detailTextLabel?.text = character.alias as String
+        
+        cell.nameView.text = character.name as String
+        cell.aliasView.text = character.alias as String
         
         if let img = character.image{
-            cell!.imageView!.image = img
+            cell.photoView.layer.cornerRadius = cell.photoView.frame.size.width / 2;
+            cell.photoView.clipsToBounds = true;
+            cell.photoView.image = img;
+            
         }
         
-        return cell!
+        return cell
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 38
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
