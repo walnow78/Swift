@@ -50,20 +50,12 @@ class UniverseViewController: UITableViewController, UniverseViewControllerDeleg
         
         self.title = "Universe Stars Wars"
         
+        
+        
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        
-    }
-    
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int)-> String {
-        
-        if section == 1{
-            return "Rebels"
-        }else{
-            return "Imperials"
-        }
         
     }
     
@@ -84,11 +76,11 @@ class UniverseViewController: UITableViewController, UniverseViewControllerDeleg
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         var header = tableView.dequeueReusableCellWithIdentifier("CustomHeader") as! UniverseTableViewHeader
-        
+    
         if section == 1{
-            header.textHeaderView.text = "Rebels"
+            header.textHeaderView.text = "rebels"
         }else{
-            header.textHeaderView.text = "Imperials"
+            header.textHeaderView.text = "imperials"
         }
         
         return header
