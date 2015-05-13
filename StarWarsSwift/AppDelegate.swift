@@ -51,10 +51,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad{
             
             // Pantalla Grande
+           
+            // Recupero la selección del usuario
             
-            // Controladores
+            var nc : NSUserDefaults = NSUserDefaults.standardUserDefaults()
             
-              var characterVC = CharacterViewController(model: c3po)
+            var section : Int?
+            var row : Int?
+            
+            var currentCharacter : StarWarsCharacter
+            
+            if let value = nc.objectForKey("section") as? Int{
+                
+                section = nc.objectForKey("section") as? Int
+                row = nc.objectForKey("row") as? Int
+                
+                if section == 1{
+                    currentCharacter = universe.rebelAtIndex(row!)
+                }else{
+                    currentCharacter = universe.imperialAtIndex(row!)
+                }
+            }else{
+                currentCharacter = c3po
+            }
+            
+            var characterVC = CharacterViewController(model: currentCharacter)
             
             // NavigationControllers
             

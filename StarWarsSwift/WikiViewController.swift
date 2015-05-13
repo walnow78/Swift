@@ -24,9 +24,7 @@ class WikiViewController: UIViewController, UIWebViewDelegate{
         self.title = model.name as String
         
     }
-    
-
-    
+        
     override func loadView() {
         NSBundle.mainBundle().loadNibNamed("WikiViewController", owner: self, options: nil)
     }

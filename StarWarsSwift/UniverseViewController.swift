@@ -136,6 +136,15 @@ class UniverseViewController: UITableViewController, UniverseViewControllerDeleg
         self.delegate?.didselectChange(self, character: character)
         
         notification.postNotificationName("didSelectChange", object: self, userInfo: param)
+        
+        // Guardo la selección del usuario para la proxima vez.
+        
+        var nc : NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        
+        nc.setObject(indexPath.section, forKey: "section")
+        nc.setObject(indexPath.row, forKey: "row")
+        
+        
             
     }
     
